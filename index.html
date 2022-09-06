@@ -1,0 +1,155 @@
+<!DOCTYPE html> 
+ <html lang="en"> 
+ <head> 
+
+ 	<meta charset="UTF-8"> 
+ 	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+	<!-- google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+
+	<!-- fontawsome -->
+	<script src="https://kit.fontawesome.com/031d24fa49.js" crossorigin="anonymous"></script>
+
+	<!-- css styles -->
+ 	<link rel="stylesheet" href="styles.css"> 
+
+	<!-- scripts -->
+	<script src="app.js" defer></script> 
+
+ 	<title>Document</title> 
+
+ </head> 
+ <body> 
+
+	<!-- navbar -->
+	<nav>
+		<div class="nav-header">
+			<div class="header-text">Where in the World?</div>
+			<div class="toggle-css-mode-btn-container">
+				<i class="fa-regular fa-moon mode-icon"></i>
+				<div class="mode-name">Light Mode</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- search inputs -->
+	<section>
+		<div class="search-items-container">
+			<div class="searchbar-container">
+				<i class="fa-solid fa-magnifying-glass searchbar-icon"></i>
+				<input placeholder="Search for a country..." type="text" name="searchbar" id="searchbar">
+			</div>
+			<div class="filter-region-drop-down">
+				<div>Filter by Region</div>
+				<i class="fa-solid fa-chevron-down icon"></i>
+
+				<ul class="regions-list">
+					<li class="region-list-item">Africa</li>
+					<li class="region-list-item">America</li>
+					<li class="region-list-item">Asia</li>
+					<li class="region-list-item">Europe</li>
+					<li class="region-list-item">Oceania</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="countrys-container">
+			<!-- get data from app.js -->
+		</div>
+	</section>
+
+	<section>
+		<div class="country-detail-modal">
+			<div class="back-btn-container">
+				<div class="back-btn">
+					<i class="fa-solid fa-arrow-left left-arrow"></i>
+					<div>Back</div>
+				</div>
+			</div>
+
+			<div class="detail-container">
+				
+			</div>
+		</div>
+	</section>
+
+
+	<!-- homepage card template -->
+	<template id="template">
+		<div class="country-card">
+			<img class="flag-img" alt="country-flag">
+			<div class="information-text">
+				<div class="information-country">Germany</div>
+				<div class="infos">
+					<span class="sub-header">Population:</span>
+					<span class="Population"></span>
+				</div>
+				<div class="infos">
+					<span class="sub-header">Region:</span>
+					<span class="Region"></span>
+				</div>
+				<div class="infos">
+					<span class="sub-header">Capital:</span>
+					<span class="Capital"></span>
+				</div>
+			</div>
+		</div>
+	</template>
+
+	<!-- modal details template -->
+	<template id="details-template">
+		<img class="flag-img-detail" alt="flag-img">
+		<div class="text-container">
+			<div class="header">Belgium</div>
+
+			<div class="info-container-detail">
+				<div>
+					<span class="sub-header">Native Name:</span>
+					<span class="native-name">fff</span>
+				</div>
+				<div>
+					<span class="sub-header">Population:</span>
+					<span class="population">ff</span>
+				</div>
+				<div>
+					<span class="sub-header">Region:</span>
+					<span class="region"></span>
+				</div>
+				<div>
+					<span class="sub-header">Sub Region:</span>
+					<span class="sub-region"></span>
+				</div>
+				<div>
+					<span class="sub-header">Capital</span>
+					<span class="capital"></span>
+				</div>
+			</div>
+			<div class="info-container-detail">
+				<div>
+					<span class="sub-header">Top Level Domain: </span>
+					<span class="top-level-domain"></span>
+				</div>
+				<div>
+					<span class="sub-header">Currencies:</span>
+					<span class="currencies"></span>
+				</div>
+				<div>
+					<span class="sub-header">Languages: </span>
+					<span class="languages"></span>
+				</div>
+			</div>
+			<div class="btn-container">
+				<span class="sub-header">Border Countries: </span>
+			</div>
+
+		</div>
+	</template>
+
+ </body> 
+ </html>
