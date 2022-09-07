@@ -168,7 +168,7 @@ async function getCountrysAPI() {
     });
 
     // border countries btn function
-    window.addEventListener("click", async (e) => {
+    document.addEventListener("click", async (e) => {
 
         try{
             // first clear container(but check wich element is clicked to avoid empty container) then render new data

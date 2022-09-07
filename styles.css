@@ -288,6 +288,8 @@ nav{
 	width: 120px;
 	height: 35px;
 	cursor: pointer;
+	position: relative;
+	z-index: 10;
 }
 
 
@@ -299,8 +301,7 @@ nav{
 
 	.detail-container{
 		grid-template-columns: 100%;
-		grid-template-rows: 50% 50%;
-		min-height: 1200px;
+		height: 1200px;
 	}
 	.flag-img-detail{
 		height: 80%;
@@ -336,7 +337,13 @@ nav{
 @media (max-width: 600px) {
 	.detail-container{
 		grid-template-rows: 30% 70%;
-		min-height: 1000px;
+		height: 1000px;
+	}
+	.text-container{
+		margin-top: 80px;
+	}
+	.flag-img-detail{
+		height: 100%;
 	}
 
 	.nav-header .header-text{
