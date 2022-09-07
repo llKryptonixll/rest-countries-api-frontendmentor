@@ -1,7 +1,6 @@
 // toogle between dark and light mode
 const toggleModeBTN = document.querySelector(".toggle-css-mode-btn-container");
 toggleModeBTN.addEventListener("click", () => {
-    // switch icon and name
     const modeIcon = document.querySelector(".mode-icon");
     const modeName = document.querySelector(".mode-name");
     const root = document.querySelector(":root");
