@@ -134,7 +134,7 @@ async function getCountrysAPI() {
     searchbar.addEventListener("input", () => {
         const countrys = document.querySelectorAll(".information-country");
         countrys.forEach((country) => {
-            if(country.innerText.toLowerCase().includes(searchbar.value)){
+            if(country.innerText.toLowerCase().includes(searchbar.value.toLowerCase())){
                 country.parentElement.parentElement.style.display = "grid";
             }
             else{
